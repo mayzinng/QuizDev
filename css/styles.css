@@ -1,0 +1,36 @@
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* variáveis */
+
+:root {
+    --h1: #F5A300;
+    --button: #F5A300;
+}
+
+#inicio {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 250px;
+}
+
+#inicio h1 {
+    font-size: 4rem;
+    color: var(--h1);
+}
+
+#comecar {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 25px;
+    background-color: var(--button);
+}
