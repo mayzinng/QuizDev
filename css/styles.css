@@ -12,11 +12,25 @@
 :root {
     --h1: #F5A300;
     --button: #F5A300;
+    --primary-color: #fff;
+    --secondary-color: #212121;
+    --button-hover: #000;
+}
+
+.dark-theme {
+    --primary-color: #212121;
+    --secondary-color: #fff;
+    --button: #F5A300;
+    --name-button: #000;
+}
+
+body {
+    background-color: var(--primary-color);
 }
 
 #light {
-    float: right;
-    margin: -12rem 0.5rem 0 0;
+    /* float: right; */
+    margin: 2rem 0 0 2rem;
     cursor: pointer;
 }
 
@@ -34,6 +48,7 @@
 }
 
 #comecar {
+    color: var(--secondary-color);
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -50,8 +65,13 @@
 }
 
 #comecar:hover {
-    background-color: #000;
+    background-color: var(--button-hover);
     color: var(--button);
+}
+
+#comecar:focus,
+#comecar:active {
+    border: none;
 }
 
 
