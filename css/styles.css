@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* border: 1px solid red; */
 }
 
 
@@ -11,6 +12,12 @@
 :root {
     --h1: #F5A300;
     --button: #F5A300;
+}
+
+#light {
+    float: right;
+    margin: -12rem 0.5rem 0 0;
+    cursor: pointer;
 }
 
 #inicio {
@@ -30,7 +37,26 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    padding: 0.4rem;
     display: flex;
-    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 3rem;
     background-color: var(--button);
+    text-transform: uppercase;
+    transition: all 0.5s;
+    border-radius: 0.2rem;
+    font-weight: 700;
+}
+
+#comecar:hover {
+    background-color: #000;
+    color: var(--button);
+}
+
+
+/* Tema dark */
+
+.tema-dark {
+    width: 300px;
 }
