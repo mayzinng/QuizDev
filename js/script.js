@@ -1,15 +1,4 @@
-// function mudaTema() {
-//     var x = document.getElementById("light");
-//     if (x.className === "tema-") {
-//         x.className += "dark";
-//     } else {
-//         x.className = "tema-";
-//     }
-
-// }
-
 var light = document.getElementById('light');
-
 light.onclick = function() {
     document.body.classList.toggle("dark-theme");
 }
@@ -17,3 +6,9 @@ light.onclick = function() {
 function quiz() {
     window.location.href = "choices.html";
 }
+
+//Animate scroll
+
+var scroll = document.querySelectorAll('#comecar');
+
+console.log(scroll)
