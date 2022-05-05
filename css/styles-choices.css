@@ -1,0 +1,143 @@
+/* geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Share+Tech+Mono&display=swap');
+.koulen {
+    font-family: 'Koulen', cursive;
+}
+
+.share {
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: -0.5rem;
+}
+
+
+/* variáveis */
+
+:root {
+    --h1: #F5A300;
+    --button: #F5A300;
+    --theme-color: #fff;
+    --details-color: #212121;
+    --button-hover: #000;
+    --cards: #1D307C;
+    --css: #0F5892;
+    --html: #D23403;
+    --js: #DF9707;
+    --shadow-cards: rgba(0, 0, 0, 0.5);
+    --shadow-hover: #cf6400;
+}
+
+.dark-theme {
+    --theme-color: #212121;
+    --details-color: #fff;
+    --button: #F5A300;
+    --name-button: #000;
+    --css: #0C304D;
+    --html: #7E2002;
+    --js: #BF8106;
+    --shadow-cards: rgba(253, 253, 253, 0.192);
+    --shadow-hover: #F5A300;
+}
+
+
+/* Body */
+
+body {
+    background-color: var(--theme-color);
+}
+
+
+/* elementos */
+
+#choices-inicio {
+    color: var(--h1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2.5rem;
+    text-indent: 2rem;
+}
+
+#light {
+    margin: 2rem 0 0 2rem;
+    cursor: pointer;
+}
+
+
+/* cards */
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-2 {
+    /* background-color: var(--cards); */
+    padding: 3.5rem;
+    margin: 8rem auto;
+    border-radius: 0.3rem;
+    width: auto;
+    height: auto;
+    line-height: 2rem;
+    box-shadow: 0px -7px 15px var(--shadow-cards);
+    transition: all 0.5s;
+}
+
+.cards-2:first-child {
+    /* background-color: var(--cards); */
+    padding: 3.5rem;
+    margin: 8rem auto;
+    border-radius: 0.3rem;
+    width: auto;
+    height: 26.813rem;
+}
+
+.cards-2 span {
+    display: flex;
+    height: 4rem;
+    margin-top: 3.313rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.125rem;
+    color: #fff;
+}
+
+
+/* Efeitos */
+
+.cards-2:hover {
+    margin-bottom: 2rem;
+    box-shadow: 0px -7px 50px var(--shadow-hover);
+}
+
+
+/* 
+--css: #0F5892;
+    --html: #D23403;
+    --js: #DF9707; */
+
+
+/* Cores dos cards */
+
+.css {
+    background-color: var(--css);
+}
+
+.html {
+    background-color: var(--html);
+}
+
+.js {
+    background-color: var(--js);
+}

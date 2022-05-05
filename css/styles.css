@@ -7,25 +7,37 @@
 }
 
 
+/* Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Share+Tech+Mono&display=swap');
+.koulen {
+    font-family: 'Koulen', cursive;
+}
+
+.share {
+    font-family: 'Share Tech Mono', monospace;
+}
+
+
 /* variáveis */
 
 :root {
     --h1: #F5A300;
     --button: #F5A300;
-    --primary-color: #fff;
-    --secondary-color: #212121;
+    --theme-color: #fff;
+    --details-color: #212121;
     --button-hover: #000;
 }
 
 .dark-theme {
-    --primary-color: #212121;
-    --secondary-color: #fff;
+    --theme-color: #212121;
+    --details-color: #fff;
     --button: #F5A300;
     --name-button: #000;
 }
 
 body {
-    background-color: var(--primary-color);
+    background-color: var(--theme-color);
 }
 
 #light {
@@ -43,16 +55,17 @@ body {
 }
 
 #inicio h1 {
-    font-size: 4rem;
+    font-size: 8.5rem;
     color: var(--h1);
 }
 
 #comecar {
-    color: var(--secondary-color);
+    color: var(--details-color);
+    width: 10rem;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding: 0.4rem;
+    padding: 0.5rem;
     display: flex;
     border: none;
     cursor: pointer;
@@ -67,16 +80,10 @@ body {
 #comecar:hover {
     background-color: var(--button-hover);
     color: var(--button);
+    box-shadow: 3px -6px 13px -2px rgba(0, 0, 0, 0.75);
 }
 
 #comecar:focus,
 #comecar:active {
     border: none;
-}
-
-
-/* Tema dark */
-
-.tema-dark {
-    width: 300px;
 }
