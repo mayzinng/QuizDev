@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 
 
@@ -24,13 +24,17 @@
 html {
     --h1: #F5A300;
     --button: #F5A300;
+    --numbers: #F5A300;
     --theme-color: #fff;
-    --details-color: #ffffff;
+    --details-color: #ececec;
     --button-hover: #000;
     --cards: #1D307C;
     --css: #0F5892;
+    --page-cssTheme: #2196F3;
+    --words-question-css-html: #fff;
     --html: #D23403;
     --js: #DF9707;
+    --words-question-js: #000;
     --shadow-cards: rgba(0, 0, 0, 0.5);
     --shadow-hover: #cf6400;
     --color-headings: #0077FF;
@@ -40,23 +44,8 @@ html {
 /* body */
 
 body {
-    background-color: var(--theme-color);
-    background-color: var(--bg);
+    background-color: var(--page-cssTheme);
 }
-
-
-/* links */
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-
-/* Página */
 
 #light {
     margin: 2rem 0 0 2rem;
@@ -64,50 +53,37 @@ a:hover {
     display: flex;
 }
 
-#inicio {
-    align-items: center;
+
+/* Questões */
+
+.quiz-section {
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     display: flex;
-    margin-top: 15%;
+    height: 8rem;
 }
 
-#inicio h1 {
-    font-size: 8.5rem;
-    color: var(--h1);
-}
-
-#comecar {
-    color: var(--details-color);
-    width: 10rem;
-    align-items: center;
-    justify-content: center;
+.quiz-subsection {
     margin: 0 auto;
-    padding: 0.5rem;
     display: flex;
-    border: none;
-    cursor: pointer;
-    margin-top: 3rem;
-    background-color: var(--button);
-    text-transform: uppercase;
-    transition: all 0.5s;
-    border-radius: 0.2rem;
-    font-weight: 700;
+    width: 80%;
+    height: 8rem;
 }
 
-#comecar:hover {
-    background-color: var(--button-hover);
-    color: var(--button);
-    box-shadow: 3px -6px 13px -2px rgba(0, 0, 0, 0.75);
+img {
+    width: 6rem;
 }
 
-#comecar:focus,
-#comecar:active {
-    border: none;
+.question {
+    margin: auto 0;
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: var(--words-question-css-html);
 }
 
 
-/* Input dark mode */
+/* Input darkMode */
 
 input[type=checkbox] {
     height: 0;

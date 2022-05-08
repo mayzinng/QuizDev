@@ -56,4 +56,35 @@ theme.addEventListener("change", ({ target }) => {
     target.checked ? changeTheme(darkMode) : changeTheme(initialColors)
 })
 
-//window.getComputedStyle(document.getElementById("comecar")).getPropertyValue("color")
+
+
+const isExistLocalStorage = (key) =>
+    localStorage.getItem(key) != null
+
+const createOrEditLocalStorage = (key, value) =>
+    localStorage.setItem(key, JSON.stringify(value))
+
+const getValeuLocalStorage = (key) =>
+    JSON.parse(localStorage.getItem(key))
+
+theme.addEventListener("change", ({ target }) => {
+    if (target.checked) {
+        changeTheme(darkMode)
+        createOrEditLocalStorage('modo', 'darkMode')
+    } else {
+        changeTheme(initialColors)
+        createOrEditLocalStorage('modo', 'initialColors')
+    }
+})
+
+if (!isExistLocalStorage('modo'))
+    createOrEditLocalStorage('modo', 'initialColors')
+
+
+if (getValeuLocalStorage('modo') === "initialColors") {
+    theme.removeAttribute('checked')
+    changeTheme(initialColors);
+} else {
+    theme.setAttribute('checked', "")
+    changeTheme(darkMode);
+}

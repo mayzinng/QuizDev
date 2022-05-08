@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 
@@ -36,19 +35,6 @@ html {
     --shadow-hover: #cf6400;
     --color-headings: #0077FF;
 }
-
-
-/* .dark-theme {
-    --theme-color: #212121;
-    --details-color: #fff;
-    --button: #F5A300;
-    --name-button: #000;
-    --css: #0C304D;
-    --html: #7E2002;
-    --js: #BF8106;
-    --shadow-cards: rgba(253, 253, 253, 0.192);
-    --shadow-hover: #F5A300;
-} */
 
 
 /* body */
@@ -84,6 +70,7 @@ a:hover {
 #light {
     margin: 2rem 0 0 2rem;
     cursor: pointer;
+    display: flex;
 }
 
 
@@ -97,7 +84,6 @@ a:hover {
 }
 
 .cards-2 {
-    /* background-color: var(--cards); */
     padding: 3.5rem;
     margin: 8rem auto;
     border-radius: 0.3rem;
@@ -110,7 +96,6 @@ a:hover {
 }
 
 .cards-2:first-child {
-    /* background-color: var(--cards); */
     padding: 3.5rem;
     margin: 8rem auto;
     border-radius: 0.3rem;
