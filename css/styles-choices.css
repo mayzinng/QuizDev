@@ -24,13 +24,19 @@
 html {
     --h1: #F5A300;
     --button: #F5A300;
+    --numbers: #F5A300;
     --theme-color: #fff;
-    --details-color: #212121;
+    --details-color: #ececec;
     --button-hover: #000;
     --cards: #1D307C;
     --css: #0F5892;
+    --page-htmlTheme: #FF5722;
+    --page-jsTheme: #FFBA32;
+    --page-cssTheme: #2196F3;
+    --words-question-css-html: #fff;
     --html: #D23403;
     --js: #DF9707;
+    --words-question-js: #000;
     --shadow-cards: rgba(0, 0, 0, 0.5);
     --shadow-hover: #cf6400;
     --color-headings: #0077FF;

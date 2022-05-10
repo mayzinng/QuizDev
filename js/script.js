@@ -1,15 +1,12 @@
-// var light = document.getElementById('light');
-// light.onclick = function() {
-//     document.body.classList.toggle("dark-theme");
-// }
-
 //Themes
 
-//window.getComputedStyle(document.getElementById("comecar")).getPropertyValue("color")
 function quiz() {
     window.location.href = "choices.html";
 }
 
+function htmlquiz() {
+    window.location.href = "choices.html";
+}
 //Themes
 
 
@@ -27,7 +24,11 @@ const initialColors = {
     html: getStyle(html, "--html"),
     js: getStyle(html, "--js"),
     cardsShadow: getStyle(html, "--shadow-cards"),
-    cardsHover: getStyle(html, "--shadow-hover")
+    cardsHover: getStyle(html, "--shadow-hover"),
+    jsTheme: getStyle(html, "--js-theme"),
+    htmlTheme: getStyle(html, "--html-theme"),
+    cssTheme: getStyle(html, "--css-theme"),
+    wordsThemeCssandHTML: getStyle(html, "--words-question-css-html"),
 }
 
 const darkMode = {
@@ -37,8 +38,14 @@ const darkMode = {
     html: "#7E2002",
     js: "#BF8106",
     cardsShadow: "rgba(253, 253, 253, 0.192)",
-    cardsHover: "#F5A300"
+    cardsHover: "#F5A300",
+    jsTheme: "#B57800",
+    htmlTheme: "#AD2E06",
+    cssTheme: "#054A81",
 }
+
+console.log(darkMode)
+console.log(initialColors)
 
 
 const transformKey = key =>

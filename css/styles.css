@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
 }
 
 
@@ -24,13 +23,19 @@
 html {
     --h1: #F5A300;
     --button: #F5A300;
+    --numbers: #F5A300;
     --theme-color: #fff;
-    --details-color: #ffffff;
+    --details-color: #ececec;
     --button-hover: #000;
     --cards: #1D307C;
+    --js-theme: #FFBA32;
+    --css-theme: #2196F3;
+    --html-theme: #FF5722;
     --css: #0F5892;
+    --words-question-css-html: #fff;
     --html: #D23403;
     --js: #DF9707;
+    --words-question-js: #000;
     --shadow-cards: rgba(0, 0, 0, 0.5);
     --shadow-hover: #cf6400;
     --color-headings: #0077FF;

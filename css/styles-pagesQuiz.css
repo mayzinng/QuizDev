@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
 }
 
 
@@ -29,8 +28,10 @@ html {
     --details-color: #ececec;
     --button-hover: #000;
     --cards: #1D307C;
+    --js-theme: #FFBA32;
+    --css-theme: #2196F3;
+    --html-theme: #FF5722;
     --css: #0F5892;
-    --page-cssTheme: #2196F3;
     --words-question-css-html: #fff;
     --html: #D23403;
     --js: #DF9707;
@@ -40,12 +41,20 @@ html {
     --color-headings: #0077FF;
 }
 
-
-/* body */
-
-body {
-    background-color: var(--page-cssTheme);
+#bg-js {
+    background-color: var(--js-theme);
 }
+
+#bg-html {
+    background-color: var(--html-theme);
+}
+
+#bg-css {
+    background-color: var(--css-theme);
+}
+
+
+/* Página quiz HTML */
 
 #light {
     margin: 2rem 0 0 2rem;
