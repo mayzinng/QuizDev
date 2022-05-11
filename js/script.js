@@ -29,6 +29,9 @@ const initialColors = {
     htmlTheme: getStyle(html, "--html-theme"),
     cssTheme: getStyle(html, "--css-theme"),
     wordsThemeCssandHTML: getStyle(html, "--words-question-css-html"),
+    questionCSS: getStyle(html, "--question-css"),
+    questionHTML: getStyle(html, "--question-html"),
+    questionJS: getStyle(html, "--question-js"),
 }
 
 const darkMode = {
@@ -42,6 +45,9 @@ const darkMode = {
     jsTheme: "#B57800",
     htmlTheme: "#AD2E06",
     cssTheme: "#054A81",
+    questionCSS: "#053255",
+    questionHTML: "#7E2508",
+    questionJS: "#E19A0D",
 }
 
 console.log(darkMode)
@@ -95,3 +101,5 @@ if (getValeuLocalStorage('modo') === "initialColors") {
     theme.setAttribute('checked', "")
     changeTheme(darkMode);
 }
+
+// Fluxo de páginas
