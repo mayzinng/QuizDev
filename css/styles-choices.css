@@ -186,3 +186,39 @@ input:checked+label::after {
 label:active:after {
     width: 45px;
 }
+
+
+/* Media queries ou breakpoints */
+
+@media screen and (max-width: 950px) {
+    #cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .cards-2:first-child,
+    .cards-2 {
+        margin: 1.5rem auto 0 auto;
+    }
+    #choices-inicio h1 {
+        font-size: 2rem;
+        margin: 0 0 0 -2rem;
+        text-align: center;
+    }
+    label {
+        cursor: pointer;
+        text-indent: -9999px;
+        width: 38px;
+        height: 27px;
+        background: grey;
+        float: right;
+        border-radius: 100px;
+        position: relative;
+        margin: -0.2rem 0rem 0 -2.15rem;
+    }
+    #choices-inicio {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin: 1rem 0;
+    }
+}

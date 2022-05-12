@@ -155,3 +155,18 @@ input:checked+label::after {
 label:active:after {
     width: 45px;
 }
+
+
+/* Media queries ou breakpoints */
+
+@media screen and (max-width: 670px) {
+    #inicio h1 {
+        font-size: 4.5rem;
+    }
+    #inicio {
+        margin-top: 50%;
+    }
+    #comecar {
+        width: 8rem;
+    }
+}
