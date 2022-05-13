@@ -221,12 +221,13 @@ img {
 #button-next-section {
     margin: 5rem auto 0 0;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
     display: flex;
+    align-items: flex-end;
 }
 
 #button-next-css {
-    margin: 2rem 7.5rem 0 0;
+    margin: 2rem 9rem 0 0;
     padding: 0.7rem;
     border-radius: 0.3rem;
     background-color: var(--question-css);
