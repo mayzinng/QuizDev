@@ -10,12 +10,24 @@
 /* Fontes */
 
 @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 .koulen {
     font-family: 'Koulen', cursive;
 }
 
 .share {
     font-family: 'Share Tech Mono', monospace;
+}
+
+.mukta {
+    font-family: 'Mukta', sans-serif;
+    text-transform: uppercase;
+}
+
+.incosolata {
+    font-family: 'Inconsolata', monospace;
+    text-transform: uppercase;
 }
 
 
@@ -187,12 +199,12 @@ img {
 #button-next-section {
     margin: 5rem auto 0 0;
     width: 100%;
-    justify-content: end;
+    justify-content: space-around;
     display: flex;
 }
 
 #button-next-js {
-    margin: 2rem 7.5rem 0 0;
+    /* margin: 2rem 7.5rem 0 0; */
     padding: 0.7rem;
     border-radius: 0.3rem;
     background-color: var(--question-js);
@@ -207,7 +219,7 @@ img {
 
 #button-next-js:hover {
     box-shadow: 0px 0px 10px 2px #000;
-    margin: 3rem 7.5rem 0 0;
+    /* margin: 3rem 7.5rem 0 0; */
 }
 
 #button-next-js:active {
@@ -221,13 +233,13 @@ img {
 #button-next-section {
     margin: 5rem auto 0 0;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-around;
     display: flex;
-    align-items: flex-end;
+    /* align-items: center; */
 }
 
 #button-next-css {
-    margin: 2rem 9rem 0 0;
+    /* margin: 2rem 9rem 0 0; */
     padding: 0.7rem;
     border-radius: 0.3rem;
     background-color: var(--question-css);
@@ -242,7 +254,7 @@ img {
 
 #button-next-css:hover {
     box-shadow: 0px 0px 10px 2px #000;
-    margin: 3rem 7.5rem 0 0;
+    /* margin: 3rem 7.5rem 0 0; */
 }
 
 #button-next-css:active {
@@ -256,12 +268,12 @@ img {
 #button-next-section {
     margin: 5rem auto 0 0;
     width: 100%;
-    justify-content: end;
+    justify-content: space-around;
     display: flex;
 }
 
 #button-next-html {
-    margin: 2rem 7.5rem 0 0;
+    /* margin: 2rem 7.5rem 0 0; */
     padding: 0.7rem;
     border-radius: 0.3rem;
     background-color: var(--question-html);
@@ -276,13 +288,16 @@ img {
 
 #button-next-html:hover {
     box-shadow: 0px 0px 10px 2px #000;
-    margin: 3rem 7.5rem 0 0;
+    /* margin: 3rem 7.5rem 0 0; */
 }
 
 #button-next-html:active {
     border: none;
     outline: none;
 }
+
+
+/* opções */
 
 
 /* Input darkMode */
@@ -327,4 +342,53 @@ input:checked+label::after {
 
 label:active:after {
     width: 45px;
+}
+
+@media screen and (max-width: 950px) {
+    .quiz-subsection img {
+        width: 5rem;
+    }
+    .quiz-subsection span {
+        font-size: 1rem;
+    }
+    .answers-css span {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .answers-css span {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .answers-css {
+        width: 100%;
+        margin: 3rem 0 0 0;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .answers-css span {
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .answers-css {
+        height: 3rem;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .answers-css span {
+        margin: 0;
+        font-size: 0.6rem;
+    }
+    .answers-css {
+        width: 108%;
+        margin-left: -0.7rem;
+        height: 3rem;
+    }
+    .quiz-subsection img {
+        width: 3rem;
+    }
 }

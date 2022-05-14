@@ -103,3 +103,23 @@ if (getValeuLocalStorage('modo') === "initialColors") {
 }
 
 // Fluxo de páginas
+
+function nextPageCss(valor) {
+    console.log("It works");
+    let teste = document.getElementById("numberQuestion");
+
+    // for (i = 1; i <= 2; i++) {
+    //     console.log(i)
+
+    let numberRight = Math.random()
+
+    console.log(numberRight)
+    if (valor == '1') {
+        let i = 1;
+        i++
+        let teste = document.getElementById("numberQuestion").src = "images/Q" + i + ".svg";
+        console.log(teste)
+    } else {
+        console.log('error')
+    }
+}
